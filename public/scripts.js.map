@@ -1,1 +1,0 @@
-{"version":3,"sources":["src/assets/main.js"],"names":[],"mappings":"AAAA;AACA;AACA;AACA,OAAO;AACP,CAAC,E","file":"scripts.js","sourcesContent":["$(document).ready(function(){\r\n    $('#popup1').popup({\r\n        transition: 'all 0.3s'\r\n      });\r\n});"],"sourceRoot":"webpack:///"}

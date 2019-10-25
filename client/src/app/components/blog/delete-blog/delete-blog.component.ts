@@ -11,11 +11,9 @@ export class DeleteBlogComponent implements OnInit {
 
 
   foundBlog = false;
-  blog={
-    title: String,
-    body: String
-  }
+  blog;
   currentURL;
+  form;
   constructor(
     private blogService : BlogService,
     private activatedRoute : ActivatedRoute,
@@ -33,7 +31,12 @@ export class DeleteBlogComponent implements OnInit {
   ngOnInit() {
     this.currentURL = this.activatedRoute.snapshot.params;
     this.blogService.getSingleBlog(this.currentURL.id).subscribe(data => {
-      this.blog = data.blogs;
+      this.blog = {
+        title: data.blogs.title,
+        body: data.blogs.title,
+        createdBy: data.blogs.createdBy,
+        createdAt: data.blogs.createdAt
+      };
       this.foundBlog = true;
     });
   }
