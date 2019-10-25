@@ -22,6 +22,7 @@
   },
   "homepage": "https://github.com/fleece30/BlogApp#readme",
   "dependencies": {
+    "@angular/cli": "^8.3.14",
     "cors": "^2.8.5",
     "express": "^4.17.1",
     "http2": "^3.3.7",
