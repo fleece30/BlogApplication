@@ -1,0 +1,31 @@
+{
+  "name": "blogapp",
+  "version": "1.0.0",
+  "description": "Blog Application",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "build": "cd client/ && npm run ng build --prod && cd .. && node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fleece30/BlogApp.git"
+  },
+  "keywords": [
+    "blog",
+    "application"
+  ],
+  "author": "Abhishek Yadav",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fleece30/BlogApp/issues"
+  },
+  "homepage": "https://github.com/fleece30/BlogApp#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "http2": "^3.3.7",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.7.1"
+  }
+}
