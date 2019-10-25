@@ -27,6 +27,9 @@
     "express": "^4.17.1",
     "http2": "^3.3.7",
     "jsonwebtoken": "^8.5.1",
-    "mongoose": "^5.7.1"
+    "mongoose": "^5.7.7"
+  },
+  "devDependencies": {
+    "@angular-devkit/build-angular": "^0.803.14"
   }
 }
