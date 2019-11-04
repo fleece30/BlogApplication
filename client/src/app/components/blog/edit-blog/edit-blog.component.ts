@@ -42,7 +42,7 @@ export class EditBlogComponent implements OnInit {
   ngOnInit() {
     this.currentURL = this.activatedRoute.snapshot.params;
     this.blogService.getSingleBlog(this.currentURL.id).subscribe(data =>{
-      this.blog = data.blogs;
+    this.blog = data.blogs;
     });
   }
 
